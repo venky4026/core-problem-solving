@@ -1,0 +1,15 @@
+#CURL
+curl --location 'http://localhost:8004/ibm-mq/api/v1/customer' \
+--header 'channel_id: IBM' \
+--header 'transaction_date_time: 2024-4-3 12:15:30' \
+--header 'transaction_time_zone: IND' \
+--header 'country_of_origin: IST' \
+--header 'transaction_id: f6e3164a-0e4c-412b-be80-cc507a554650' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "ABC",
+    "location": "Banglore",
+    "email": "test@gmail.com",
+    "age": 20,
+    "gender": "Male"
+}'

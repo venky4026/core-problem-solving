@@ -1,0 +1,24 @@
+server:
+  port: 8004
+  servlet: 
+    context-path: /ibm-mq
+    encoding:
+      charset: UTF-8
+      force-response: true
+
+
+management:
+  endpoints:
+        web:
+            exposure:
+                exclude: env,beans
+                include: '*'
+  metrics:
+    export:
+      datadog:
+        enabled: true
+      defaults:
+        enabled: true
+    use-global-registry: true
+    atlas:
+        uri: "https://atlas.example.com:7101/api/v1/publish"
