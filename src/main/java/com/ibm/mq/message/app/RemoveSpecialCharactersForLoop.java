@@ -1,6 +1,7 @@
 package com.ibm.mq.message.app;
 
 public class RemoveSpecialCharactersForLoop {
+	
 	public static void main(String[] args) {
 		String input = "Hel$lo";
 		String output = "";
